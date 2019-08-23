@@ -30,7 +30,7 @@
         {
             this.openFileBtn = new System.Windows.Forms.Button();
             this.saveFileButton = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.TextJSON = new System.Windows.Forms.RichTextBox();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.SuspendLayout();
@@ -43,6 +43,7 @@
             this.openFileBtn.TabIndex = 0;
             this.openFileBtn.Text = "Open Folder";
             this.openFileBtn.UseVisualStyleBackColor = true;
+            this.openFileBtn.Click += new System.EventHandler(this.openFileBtn_Click);
             // 
             // saveFileButton
             // 
@@ -52,14 +53,15 @@
             this.saveFileButton.TabIndex = 1;
             this.saveFileButton.Text = "Save JSON File";
             this.saveFileButton.UseVisualStyleBackColor = true;
+            this.saveFileButton.Click += new System.EventHandler(this.saveFileButton_Click);
             // 
-            // richTextBox1
+            // TextJSON
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(157, 12);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(451, 354);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "";
+            this.TextJSON.Location = new System.Drawing.Point(157, 12);
+            this.TextJSON.Name = "TextJSON";
+            this.TextJSON.Size = new System.Drawing.Size(451, 354);
+            this.TextJSON.TabIndex = 2;
+            this.TextJSON.Text = "";
             // 
             // openFileDialog
             // 
@@ -70,7 +72,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(620, 378);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.TextJSON);
             this.Controls.Add(this.saveFileButton);
             this.Controls.Add(this.openFileBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -84,7 +86,7 @@
 
         private System.Windows.Forms.Button openFileBtn;
         private System.Windows.Forms.Button saveFileButton;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox TextJSON;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.SaveFileDialog saveFileDialog;
     }
