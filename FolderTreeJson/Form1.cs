@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FolderTreeJson
 {
-    public partial class Form1 : Form
+    public partial class FolderTreeJson : Form
     {
-        public Form1()
+        public FolderTreeJson()
         {
             InitializeComponent();
         }
